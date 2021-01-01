@@ -4,3 +4,4 @@
 	<p>{{ $contato['nome'] ." - ". $contato['contato'] }}</p>
 
 @endforeach
+
