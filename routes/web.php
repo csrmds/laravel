@@ -25,3 +25,5 @@ Route::get ('/contato', ['uses'=>'ContatoController@index']);
 Route::post ('/contato/{id?}', ['uses'=>'ContatoController@criar']);
 
 Route::put ('/contato/{id?}', ['uses'=>'ContatoController@editar']);
+
+
