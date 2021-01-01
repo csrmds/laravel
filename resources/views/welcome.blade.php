@@ -92,7 +92,22 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                    <a href="https://github.com/laravel/laravel">cesão!</a>
+                    <a href="https://github.com/laravel/laravel">xa!</a>
+                </div>
+                <div>
+                    <h2>teste com rotas</h2>
+                    <form action="/contato" method="post">
+                        {{ csrf_field() }}
+                        <input type="text" name="nome" placeholder="Nome / POST"/>
+                        <button>POST</button>
+                    </form>
+
+                    <form action="/contato" method="post">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="_method" value="put">
+                        <input type="text" name="nome" placeholder="Nome / PUT"/>
+                        <button>PUT</button>
+                    </form>
                 </div>
             </div>
         </div>
