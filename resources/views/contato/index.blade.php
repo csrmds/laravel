@@ -1,7 +1,15 @@
-<h2>Index de Contato</h2>
+@extends('layouts.site')
 
-@foreach($contatos as $contato)
-	<p>{{ $contato['nome'] ." - ". $contato['contato'] }}</p>
+@section('titulo', "Contatos")
 
-@endforeach
+@section('conteudo')
 
+	<h2>Index de Contato</h2>
+
+	@foreach($contatos as $contato)
+		<p>{{ $contato['nome'] ." - ". $contato['contato'] }}</p>
+
+	@endforeach
+
+
+@endsection
